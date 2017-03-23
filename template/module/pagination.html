@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>分页</title>
+    <link rel="stylesheet" href="../../css/reset.css"/>
+    <link rel="stylesheet" href="../../css/bootstrap/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../../css/highlight/paraiso-light.css"/>
+    <script src="../../js/plugins/highlinght/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    <!--[if lt IE 9]>
+    <script src="../../js/plugins/html5shiv.js"></script>
+    <script src="../../js/plugins/respond.js"></script>
+    <![endif]-->
+</head>
+<body class="f-p-sm">
+  <div class="f-m-b-sm">
+      <p class="f-title">默认分页</p>
+      <nav>
+          <ul class="pagination">
+              <li>
+                  <a href="#" aria-label="Previous">
+                      <span aria-hidden="true">&laquo;</span>
+                  </a>
+              </li>
+              <li><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">5</a></li>
+              <li>
+                  <a href="#" aria-label="Next">
+                      <span aria-hidden="true">&raquo;</span>
+                  </a>
+              </li>
+          </ul>
+      </nav>
+<pre class="clear-pre">
+    <code class="html">
+        &lt;nav&gt;
+            &lt;ul class="pagination"&gt;
+                &lt;li&gt;
+                    &lt;a href="#" aria-label="Previous"&gt;
+                        &lt;span aria-hidden="true"&gt;&laquo;&lt;/span&gt;
+                    &lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;&lt;a href="#"&gt;1&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#"&gt;2&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#"&gt;3&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#"&gt;4&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#"&gt;5&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;
+                    &lt;a href="#" aria-label="Next"&gt;
+                        &lt;span aria-hidden="true"&gt;&raquo;&lt;/span&gt;
+                    &lt;/a&gt;
+                &lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/nav&gt;
+    </code>
+</pre>
+  </div>
+  <div class="f-m-b-sm">
+      <p class="f-title">禁用和激活状态</p>
+      <p>链接在不同情况下可以定制。你可以给不能点击的链接添加 <span class="red">.disabled</span> 类、给当前页添加 <span class="red">.active</span> 类。</p>
+      <nav>
+          <ul class="pagination">
+              <li  class="disabled">
+                  <a href="#" aria-label="Previous">
+                      <span aria-hidden="true">&laquo;</span>
+                  </a>
+              </li>
+              <li  class="active"><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">5</a></li>
+              <li>
+                  <a href="#" aria-label="Next">
+                      <span aria-hidden="true">&raquo;</span>
+                  </a>
+              </li>
+          </ul>
+      </nav>
+      <pre class="clear-pre">
+          <code class="html">
+              &lt;nav&gt;
+                  &lt;ul class="pagination"&gt;
+                      &lt;li  class="disabled"&gt;
+                          &lt;a href="#" aria-label="Previous"&gt;
+                              &lt;span aria-hidden="true"&gt;&laquo;&lt;/span&gt;
+                          &lt;/a&gt;
+                      &lt;/li&gt;
+                      &lt;li  class="active"&gt;&lt;a href="#"&gt;1&lt;/a&gt;&lt;/li&gt;
+                      &lt;li&gt;&lt;a href="#"&gt;2&lt;/a&gt;&lt;/li&gt;
+                      &lt;li&gt;&lt;a href="#"&gt;3&lt;/a&gt;&lt;/li&gt;
+                      &lt;li&gt;&lt;a href="#"&gt;4&lt;/a&gt;&lt;/li&gt;
+                      &lt;li&gt;&lt;a href="#"&gt;5&lt;/a&gt;&lt;/li&gt;
+                      &lt;li&gt;
+                          &lt;a href="#" aria-label="Next"&gt;
+                              &lt;span aria-hidden="true"&gt;&raquo;&lt;/span&gt;
+                          &lt;/a&gt;
+                      &lt;/li&gt;
+                  &lt;/ul&gt;
+              &lt;/nav&gt;
+          </code>
+      </pre>
+  </div>
+  <div class="f-m-b-sm">
+      <p class="f-title">翻页</p>
+      <nav>
+          <ul class="pager">
+              <li><a href="#">Previous</a></li>
+              <li><a href="#">Next</a></li>
+          </ul>
+      </nav>
+      <pre class="clear-pre">
+          <code class="html">
+              &lt;nav&gt;
+                  &lt;ul class="pager"&gt;
+                      &lt;li&gt;&lt;a href="#"&gt;Previous&lt;/a&gt;&lt;/li&gt;
+                      &lt;li&gt;&lt;a href="#"&gt;Next&lt;/a&gt;&lt;/li&gt;
+                  &lt;/ul&gt;
+              &lt;/nav&gt;
+          </code>
+      </pre>
+  </div>
+  <div class="f-m-b-sm">
+      <p class="f-title">对齐链接</p>
+      <nav>
+          <ul class="pager">
+              <li class="previous"><a href="#"><span aria-hidden="true">&larr;</span> Older</a></li>
+              <li class="next"><a href="#">Newer <span aria-hidden="true">&rarr;</span></a></li>
+          </ul>
+      </nav>
+      <pre class="clear-pre">
+          <code class="html">
+              &lt;nav&gt;
+                  &lt;ul class="pager"&gt;
+                      &lt;li class="previous"&gt;&lt;a href="#"&gt;&lt;span aria-hidden="true"&gt;&larr;&lt;/span&gt; Older&lt;/a&gt;&lt;/li&gt;
+                      &lt;li class="next"&gt;&lt;a href="#"&gt;Newer &lt;span aria-hidden="true"&gt;&rarr;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                  &lt;/ul&gt;
+              &lt;/nav&gt;  
+          </code>
+      </pre>
+  </div>
+  <div class="f-m-b-sm">
+      <p class="f-title">可选的禁用状态</p>
+      <nav>
+          <ul class="pager">
+              <li class="previous disabled"><a href="#"><span aria-hidden="true">&larr;</span> Older</a></li>
+              <li class="next"><a href="#">Newer <span aria-hidden="true">&rarr;</span></a></li>
+          </ul>
+      </nav>
+      <pre class="clear-pre">
+          <code class="html">
+              &lt;nav&gt;
+              &lt;ul class="pager"&gt;
+              &lt;li class="previous"&gt;&lt;a href="#"&gt;&lt;span aria-hidden="true"&gt;&larr;&lt;/span&gt; Older&lt;/a&gt;&lt;/li&gt;
+              &lt;li class="next"&gt;&lt;a href="#"&gt;Newer &lt;span aria-hidden="true"&gt;&rarr;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+              &lt;/ul&gt;
+              &lt;/nav&gt;
+          </code>
+      </pre>
+  </div>
+<script src="../../js/jquery-1.11.3.min.js"></script>
+<script src="../../js/plugins/bootstrap.min.js"></script>
+</body>
+</html>

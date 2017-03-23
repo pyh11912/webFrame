@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>内联表单</title>
+    <link rel="stylesheet" href="../../css/reset.css"/>
+    <link rel="stylesheet" href="../../css/bootstrap/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../../css/highlight/paraiso-light.css"/>
+    <script src="../../js/plugins/highlinght/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    <!--[if lt IE 9]>
+    <script src="../../js/plugins/html5shiv.js"></script>
+    <script src="../../js/plugins/respond.js"></script>
+    <![endif]-->
+</head>
+<body class="f-p-sm">
+<div class="container-fluid">
+    <form class="form-horizontal">
+        <div class="form-group">
+            <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+            <div class="col-sm-10">
+                <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+            <div class="col-sm-10">
+                <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox"> Remember me
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" class="btn btn-default">Sign in</button>
+            </div>
+        </div>
+    </form>
+</div>
+<pre class="clear-pre">
+    <code class="html">
+        通过为表单添加 .form-horizontal 类，并联合使用 Bootstrap 预置的栅格类，可以将 label 标签和控件组水平并排布局。这样做将改变 .form-group 的行为，使其表现为栅格系统中的行（row），因此就无需再额外添加 .row 了。
+        &lt;form class="form-horizontal"&gt;
+            &lt;div class="form-group"&gt;
+                &lt;label for="inputEmail3" class="col-sm-2 control-label"&gt;Email&lt;/label&gt;
+                &lt;div class="col-sm-10"&gt;
+                    &lt;input type="email" class="form-control" id="inputEmail3" placeholder="Email"&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="form-group"&gt;
+                &lt;label for="inputPassword3" class="col-sm-2 control-label"&gt;Password&lt;/label&gt;
+                &lt;div class="col-sm-10"&gt;
+                    &lt;input type="password" class="form-control" id="inputPassword3" placeholder="Password"&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="form-group"&gt;
+                &lt;div class="col-sm-offset-2 col-sm-10"&gt;
+                    &lt;div class="checkbox"&gt;
+                        &lt;label&gt;
+                            &lt;input type="checkbox"&gt; Remember me
+                        &lt;/label&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="form-group"&gt;
+                &lt;div class="col-sm-offset-2 col-sm-10"&gt;
+                    &lt;button type="submit" class="btn btn-default"&gt;Sign in&lt;/button&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/form&gt;
+    </code>
+</pre>
+<script src="../../js/jquery-1.11.3.min.js"></script>
+<script src="../../js/plugins/bootstrap.min.js"></script>
+</body>
+</html>

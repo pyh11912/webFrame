@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>轮播图</title>
+    <link rel="stylesheet" href="../../css/reset.css"/>
+    <script type="text/javascript" src="../../js/plugins/myfocus/myfocus-2.0.1.min.js"></script>
+    <style type="text/css">
+        body { background:#fff; padding:20px;}
+        h2{height:42px; line-height:42px; background:#f1f1f1; margin-bottom:20px; font-size:12px; color:#666; font-weight:normal;}
+        #myFocus{ width:560px; height:300px;margin:0 auto}
+    </style>
+</head>
+<body>
+<h2>提示：可以修改“pattern”参数以更换不同的风格</h2>
+<div id="myFocus"><!--焦点图盒子-->
+    <div class="loading"><img src="../../js/plugins/myfocus/img/loading.gif" alt="请稍候..." /></div><!--载入画面(可删除)-->
+    <div class="pic"><!--图片列表-->
+        <ul>
+            <li><a href="#1"><img src="../../js/plugins/myfocus/img/1a.jpg" thumb="" alt="图片1来源于网络，版权属于作者" text="图片1更详细的描述文字" /></a></li>
+            <li><a href="#2"><img src="../../js/plugins/myfocus/img/2a.jpg" thumb="" alt="版权属于作者，图片2来源于网络" text="图片2更详细的描述文字" /></a></li>
+            <li><a href="#3"><img src="../../js/plugins/myfocus/img/3a.jpg" thumb="" alt="图片3来源于网络，版权属于作者" text="图片3更详细的描述文字" /></a></li>
+            <li><a href="#4"><img src="../../js/plugins/myfocus/img/4a.jpg" thumb="" alt="版权属于作者，图片4来源于网络" text="图片4更详细的描述文字" /></a></li>
+            <li><a href="#5"><img src="../../js/plugins/myfocus/img/5a.jpg" thumb="" alt="图片5来源于网络，版权属于作者" text="图片5更详细的描述文字" /></a></li>
+        </ul>
+    </div>
+</div>
+<pre>
+    <code class="html">
+        &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+        &lt;head lang="en"&gt;
+            &lt;meta charset="UTF-8"&gt;
+            &lt;title&gt;轮播图&lt;/title&gt;
+            &lt;link rel="stylesheet" href="../css/reset.css"/&gt;
+            &lt;script type="text/javascript" src="../js/plugins/myfocus/myfocus-2.0.1.min.js"&gt;&lt;/script&gt;
+            &lt;style type="text/css"&gt;
+                body { background:#fff; padding:20px;}
+                h2{height:42px; line-height:42px; background:#f1f1f1; margin-bottom:20px; font-size:12px; color:#666; font-weight:normal;}
+                #myFocus{ width:560px; height:300px;}
+            &lt;/style&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+        &lt;h2&gt;提示：可以修改“pattern”参数以更换不同的风格&lt;/h2&gt;
+        &lt;div id="myFocus"&gt;&lt;!--焦点图盒子--&gt;
+            &lt;div class="loading"&gt;&lt;img src="../js/plugins/myfocus/img/loading.gif" alt="请稍候..." /&gt;&lt;/div&gt;&lt;!--载入画面(可删除)--&gt;
+            &lt;div class="pic"&gt;&lt;!--图片列表--&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;&lt;a href="#1"&gt;&lt;img src="../js/plugins/myfocus/img/1a.jpg" thumb="" alt="图片1来源于网络，版权属于作者" text="图片1更详细的描述文字" /&gt;&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#2"&gt;&lt;img src="../js/plugins/myfocus/img/2a.jpg" thumb="" alt="版权属于作者，图片2来源于网络" text="图片2更详细的描述文字" /&gt;&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#3"&gt;&lt;img src="../js/plugins/myfocus/img/3a.jpg" thumb="" alt="图片3来源于网络，版权属于作者" text="图片3更详细的描述文字" /&gt;&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#4"&gt;&lt;img src="../js/plugins/myfocus/img/4a.jpg" thumb="" alt="版权属于作者，图片4来源于网络" text="图片4更详细的描述文字" /&gt;&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#5"&gt;&lt;img src="../js/plugins/myfocus/img/5a.jpg" thumb="" alt="图片5来源于网络，版权属于作者" text="图片5更详细的描述文字" /&gt;&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;script type="text/javascript"&gt;
+            //设置
+            myFocus.set({
+                id:'myFocus',//ID
+                pattern:'mF_fancy'//风格
+            });
+        &lt;/script&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;
+    </code>
+</pre>
+<script type="text/javascript">
+    //设置
+    myFocus.set({
+        id:'myFocus',//ID
+        pattern:'mF_fancy'//风格
+    });
+</script>
+<link rel="stylesheet" href="../../css/highlight/paraiso-light.css"/>
+<script src="../../js/plugins/highlinght/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+</body>
+</html>

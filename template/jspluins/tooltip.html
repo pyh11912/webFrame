@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>工具提示</title>
+    <link rel="stylesheet" href="../../css/reset.css"/>
+    <link rel="stylesheet" href="../../css/bootstrap/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../../css/highlight/paraiso-light.css"/>
+    <script src="../../js/plugins/highlinght/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    <!--[if lt IE 9]>
+    <script src="../../js/plugins/html5shiv.js"></script>
+    <script src="../../js/plugins/respond.js"></script>
+    <![endif]-->
+</head>
+<body class="f-p-sm">
+<p class="f-title">实例</p>
+<div class="f-m text-align">
+    <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="left" title="Tooltip on left">Tooltip on left</button>
+    <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Tooltip on top</button>
+    <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">Tooltip on bottom</button>
+    <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="Tooltip on right">Tooltip on right</button>
+</div>
+<pre class="clear-pre">
+    <code class="html">
+        &lt;!--HTML语句--&gt;
+        &lt;button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="left" title="Tooltip on left"&gt;Tooltip on left&lt;/button&gt;
+        &lt;button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Tooltip on top"&gt;Tooltip on top&lt;/button&gt;
+        &lt;button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom"&gt;Tooltip on bottom&lt;/button&gt;
+        &lt;button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="Tooltip on right"&gt;Tooltip on right&lt;/button&gt;
+
+        &lt;!--需要调动这样一条JavaScript语句--&gt;
+        &lt;script&gt;
+            $(function () {
+                $('[data-toggle="tooltip"]').tooltip()
+            })
+        &lt;/script&gt;
+    </code>
+</pre>
+<script src="../../js/jquery-1.11.3.min.js"></script>
+<script src="../../js/plugins/bootstrap.min.js"></script>
+<script>
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
+</script>
+</body>
+</html>

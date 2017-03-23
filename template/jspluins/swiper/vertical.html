@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>垂直方向</title>
+    <link rel="stylesheet" href="../../../css/reset.css"/>
+    <link rel="stylesheet" href="../../../js/plugins/swiper/swiper.min.css"/>
+    <link rel="stylesheet" href="../../../css/bootstrap/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../../../css/highlight/paraiso-light.css"/>
+    <script src="../../../js/plugins/highlinght/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    <!--[if lt IE 9]>
+    <script src="../../../js/plugins/html5shiv.js"></script>
+    <script src="../../../js/plugins/respond.js"></script>
+    <![endif]-->
+    <style>
+        html, body {
+            position: relative;
+            height: 100%;
+        }
+        .swiper-container {
+            border:1px solid #00ffff;
+            width: 100%;
+            height:400px;
+        }
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body class="f-p-sm">
+<a href="swiper.html" class="btn btn-default" style="margin-bottom:10px;">返回上级</a>
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">Slide 1</div>
+        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide">Slide 3</div>
+        <div class="swiper-slide">Slide 4</div>
+        <div class="swiper-slide">Slide 5</div>
+        <div class="swiper-slide">Slide 6</div>
+        <div class="swiper-slide">Slide 7</div>
+        <div class="swiper-slide">Slide 8</div>
+        <div class="swiper-slide">Slide 9</div>
+        <div class="swiper-slide">Slide 10</div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+</div>
+<pre class="clear-pre">
+    <code class="html">
+        &lt;!--需要引入swiper.min.css文件--&gt;
+        &lt;link rel="stylesheet" href="../../../js/plugins/swiper/swiper.min.css"/&gt;
+
+        &lt;div class="swiper-container"&gt;
+        &lt;div class="swiper-wrapper"&gt;
+        &lt;div class="swiper-slide"&gt;Slide 1&lt;/div&gt;
+        &lt;div class="swiper-slide"&gt;Slide 2&lt;/div&gt;
+        &lt;div class="swiper-slide"&gt;Slide 3&lt;/div&gt;
+        &lt;div class="swiper-slide"&gt;Slide 4&lt;/div&gt;
+        &lt;div class="swiper-slide"&gt;Slide 5&lt;/div&gt;
+        &lt;div class="swiper-slide"&gt;Slide 6&lt;/div&gt;
+        &lt;div class="swiper-slide"&gt;Slide 7&lt;/div&gt;
+        &lt;div class="swiper-slide"&gt;Slide 8&lt;/div&gt;
+        &lt;div class="swiper-slide"&gt;Slide 9&lt;/div&gt;
+        &lt;div class="swiper-slide"&gt;Slide 10&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;!-- Add Pagination --&gt;
+        &lt;div class="swiper-pagination"&gt;&lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;!--需要引入swiper.min.js文件,并且需要实例化一个对象--&gt;
+        &lt;script src="../../../js/plugins/swiper/swiper.min.js"&gt;&lt;/script&gt;
+        &lt;script&gt;
+        var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            paginationClickable: true,
+            direction: 'vertical'
+        });
+        &lt;/script&gt;
+    </code>
+</pre>
+<script src="../../../js/jquery-1.11.3.min.js"></script>
+<script src="../../../js/plugins/bootstrap.min.js"></script>
+<script src="../../../js/plugins/swiper/swiper.min.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        direction: 'vertical'
+    });
+</script>
+</body>
+</html>

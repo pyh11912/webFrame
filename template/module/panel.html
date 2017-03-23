@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>面板</title>
+    <link rel="stylesheet" href="../../css/reset.css"/>
+    <link rel="stylesheet" href="../../css/bootstrap/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../../css/highlight/paraiso-light.css"/>
+    <script src="../../js/plugins/highlinght/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    <!--[if lt IE 9]>
+    <script src="../../js/plugins/html5shiv.js"></script>
+    <script src="../../js/plugins/respond.js"></script>
+    <![endif]-->
+</head>
+<body class="f-p-sm">
+ <div class="f-m-b-sm">
+     <p class="f-title">基本实例</p>
+     <p>默认的 <span class="red">.panel</span> 组件所做的只是设置基本的边框（<span class="red">border</span>）和内补（<span class="red">padding</span>）来包含内容。</p>
+     <div class="panel panel-default">
+         <div class="panel-body">
+             Basic panel example
+         </div>
+     </div>
+     <pre class="clear-pre">
+    <code class="html">
+        &lt;div class="panel panel-default"&gt;
+            &lt;div class="panel-body"&gt;
+                Basic panel example
+            &lt;/div&gt;
+        &lt;/div&gt;
+    </code>
+</pre>
+ </div>
+ <div class="f-m-b-sm">
+     <p class="f-title">带标题的面版</p>
+     <p>通过 <span class="red">.panel-heading</span> 可以很简单地为面板加入一个标题容器。你也可以通过添加设置了
+         <span class="red">.panel-title</span> 类的 &lt;h1&gt;-&lt;h6&gt; 标签，添加一个预定义样式的标题。
+     为了给链接设置合适的颜色，务必将链接放到带有<span class="red">.panel-title</span> 类的标题标签内。</p>
+     <div class="panel panel-default">
+         <div class="panel-heading">Panel heading <span class="red">without title</span></div>
+         <div class="panel-body">
+             Panel content
+         </div>
+         <div class="panel-footer">Panel footer</div>
+     </div>
+
+     <div class="panel panel-default">
+         <div class="panel-heading">
+             <h3 class="panel-title">Panel title</h3>
+         </div>
+         <div class="panel-body">
+             Panel content
+         </div>
+         <div class="panel-footer">Panel footer</div>
+     </div>
+     <pre class="clear-pre">
+    <code class="html">
+        &lt;div class="panel panel-default"&gt;
+            &lt;div class="panel-heading"&gt;Panel heading without title&lt;/div&gt;
+            &lt;div class="panel-body"&gt;
+                Panel content
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class="panel panel-default"&gt;
+            &lt;div class="panel-heading"&gt;
+                &lt;h3 class="panel-title"&gt;Panel title&lt;/h3&gt;
+            &lt;/div&gt;
+            &lt;div class="panel-body"&gt;
+                Panel content
+            &lt;/div&gt;
+        &lt;/div&gt;
+    </code>
+</pre>
+ </div>
+ <div class="f-m-b-sm">
+     <p class="f-title">情境效果</p>
+     <p>像其他组件一样，可以简单地通过加入有情境效果的状态类，给特定的内容使用更针对特定情境的面版。</p>
+     <div class="panel panel-primary">
+         <div class="panel-heading">
+             <div class="panel-title">我是标题</div>
+         </div>
+         <div class="panel-body">
+             我是主体
+         </div>
+         <div class="panel-footer">
+             我是底部
+         </div>
+     </div>
+     <div class="panel panel-success">
+         <div class="panel-heading">
+             <div class="panel-title">我是标题</div>
+         </div>
+         <div class="panel-body">
+             我是主体
+         </div>
+         <div class="panel-footer">
+             我是底部
+         </div>
+     </div>
+     <div class="panel panel-info">
+         <div class="panel-heading">
+             <div class="panel-title">我是标题</div>
+         </div>
+         <div class="panel-body">
+             我是主体
+         </div>
+         <div class="panel-footer">
+             我是底部
+         </div>
+     </div>
+     <div class="panel panel-warning">
+         <div class="panel-heading">
+             <div class="panel-title">我是标题</div>
+         </div>
+         <div class="panel-body">
+             我是主体
+         </div>
+         <div class="panel-footer">
+             我是底部
+         </div>
+     </div>
+     <div class="panel panel-danger">
+         <div class="panel-heading">
+             <div class="panel-title">我是标题</div>
+         </div>
+         <div class="panel-body">
+             我是主体
+         </div>
+         <div class="panel-footer">
+             我是底部
+         </div>
+     </div>
+     <pre class="clear-pre">
+    <code class="html">
+        &lt;div class="panel panel-primary"&gt;
+            &lt;div class="panel-heading"&gt;
+                &lt;div class="panel-title"&gt;我是标题&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="panel-body"&gt;
+                我是主体
+            &lt;/div&gt;
+            &lt;div class="panel-footer"&gt;
+                我是底部
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="panel panel-success"&gt;
+            &lt;div class="panel-heading"&gt;
+                &lt;div class="panel-title"&gt;我是标题&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="panel-body"&gt;
+                我是主体
+            &lt;/div&gt;
+            &lt;div class="panel-footer"&gt;
+                我是底部
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="panel panel-info"&gt;
+            &lt;div class="panel-heading"&gt;
+                &lt;div class="panel-title"&gt;我是标题&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="panel-body"&gt;
+                我是主体
+            &lt;/div&gt;
+            &lt;div class="panel-footer"&gt;
+                我是底部
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="panel panel-warning"&gt;
+            &lt;div class="panel-heading"&gt;
+                &lt;div class="panel-title"&gt;我是标题&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="panel-body"&gt;
+                我是主体
+            &lt;/div&gt;
+            &lt;div class="panel-footer"&gt;
+                我是底部
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="panel panel-danger"&gt;
+            &lt;div class="panel-heading"&gt;
+                &lt;div class="panel-title"&gt;我是标题&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="panel-body"&gt;
+                我是主体
+            &lt;/div&gt;
+            &lt;div class="panel-footer"&gt;
+                我是底部
+            &lt;/div&gt;
+        &lt;/div&gt;
+    </code>
+</pre>
+ </div>
+ <div class="f-m-b-sm">
+     <p class="f-title"></p>
+     <p></p>
+     <pre class="clear-pre">
+    <code class="html">
+    </code>
+</pre>
+ </div>
+<script src="../../js/jquery-1.11.3.min.js"></script>
+<script src="../../js/plugins/bootstrap.min.js"></script>
+</body>
+</html>

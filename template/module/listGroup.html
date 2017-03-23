@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>列表组</title>
+    <link rel="stylesheet" href="../../css/reset.css"/>
+    <link rel="stylesheet" href="../../css/bootstrap/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../../css/highlight/paraiso-light.css"/>
+    <script src="../../js/plugins/highlinght/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    <!--[if lt IE 9]>
+    <script src="../../js/plugins/html5shiv.js"></script>
+    <script src="../../js/plugins/respond.js"></script>
+    <![endif]-->
+</head>
+<body class="f-p-sm">
+<div class="f-m-b-sm">
+    <p class="f-title">基本实例</p>
+    <p>最简单的列表组仅仅是一个带有多个列表条目的无序列表，另外还需要设置适当的类。我们提供了一些预定义的样式，你可以根据自身的需求通过 <span class="red">CSS</span> 自己定制。</p>
+    <ul class="list-group">
+        <li class="list-group-item">Cras justo odio</li>
+        <li class="list-group-item">Dapibus ac facilisis in</li>
+        <li class="list-group-item">Morbi leo risus</li>
+        <li class="list-group-item">Porta ac consectetur ac</li>
+        <li class="list-group-item">Vestibulum at eros</li>
+    </ul>
+<pre class="clear-pre">
+    <code class="html">
+        &lt;ul class="list-group"&gt;
+            &lt;li class="list-group-item"&gt;Cras justo odio&lt;/li&gt;
+            &lt;li class="list-group-item"&gt;Dapibus ac facilisis in&lt;/li&gt;
+            &lt;li class="list-group-item"&gt;Morbi leo risus&lt;/li&gt;
+            &lt;li class="list-group-item"&gt;Porta ac consectetur ac&lt;/li&gt;
+            &lt;li class="list-group-item"&gt;Vestibulum at eros&lt;/li&gt;
+        &lt;/ul&gt;
+    </code>
+</pre>
+</div>
+<div class="f-m-b-sm">
+    <p class="f-title">徽章</p>
+    <p>给列表组加入<span class="red">徽章组件</span>，它会自动被放在右边。</p>
+    <ul class="list-group">
+        <li class="list-group-item">
+            <span class="badge">14</span>
+            Cras justo odio
+        </li>
+        <li class="list-group-item">
+            <span class="badge">14</span>
+            What's your name
+        </li>
+        <li class="list-group-item">
+            <span class="badge">14</span>
+            What's your name
+        </li>
+    </ul>
+    <pre class="clear-pre">
+        <code class="html">
+            &lt;ul class="list-group"&gt;
+                &lt;li class="list-group-item"&gt;
+                    &lt;span class="badge"&gt;14&lt;/span&gt;
+                    Cras justo odio
+                &lt;/li&gt;
+                &lt;li class="list-group-item"&gt;
+                    &lt;span class="badge"&gt;14&lt;/span&gt;
+                    What's your name
+                &lt;/li&gt;
+                &lt;li class="list-group-item"&gt;
+                    &lt;span class="badge"&gt;14&lt;/span&gt;
+                    What's your name
+                &lt;/li&gt;
+            &lt;/ul&gt;
+        </code>
+    </pre>
+</div>
+<div class="f-m-b-sm">
+    <p class="f-title">被禁用的条目</p>
+    <p>为 <span class="red">.list-group-item</span> 添加<span class="red"> .disabled</span> 类可以让单个条目显示为灰色，表现出被禁用的效果。</p>
+    <div class="list-group">
+        <a href="#" class="list-group-item disabled">
+            Cras justo odio
+        </a>
+        <a href="#" class="list-group-item">Dapibus ac facilisis in</a>
+        <a href="#" class="list-group-item">Morbi leo risus</a>
+        <a href="#" class="list-group-item">Porta ac consectetur ac</a>
+        <a href="#" class="list-group-item">Vestibulum at eros</a>
+    </div>
+    <pre class="clear-pre">
+        <code class="html">
+            &lt;div class="list-group"&gt;
+                &lt;a href="#" class="list-group-item disabled"&gt;
+                    Cras justo odio
+                &lt;/a&gt;
+                &lt;a href="#" class="list-group-item"&gt;Dapibus ac facilisis in&lt;/a&gt;
+                &lt;a href="#" class="list-group-item"&gt;Morbi leo risus&lt;/a&gt;
+                &lt;a href="#" class="list-group-item"&gt;Porta ac consectetur ac&lt;/a&gt;
+                &lt;a href="#" class="list-group-item"&gt;Vestibulum at eros&lt;/a&gt;
+            &lt;/div&gt;
+        </code>
+    </pre>
+</div>
+<div class="f-m-b-sm">
+    <p class="f-title">情境类</p>
+    <p>为列表中的条目添加情境类，默认样式或链接列表都可以。还可以为列表中的条目设置 <span class="red">.active</span> 状态。</p>
+    <div class="container-fluid">
+        <div class="row">
+                <div class="col-md-6 col-sm-6">
+                    <ul class="list-group">
+                        <li class="list-group-item list-group-item-success">Dapibus ac facilisis in</li>
+                        <li class="list-group-item list-group-item-info">Cras sit amet nibh libero</li>
+                        <li class="list-group-item list-group-item-warning">Porta ac consectetur ac</li>
+                        <li class="list-group-item list-group-item-danger">Vestibulum at eros</li>
+                    </ul>
+                </div>
+            <div class="col-md-6 col-sm-6">
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-success">Dapibus ac facilisis in</a>
+                    <a href="#" class="list-group-item list-group-item-info">Cras sit amet nibh libero</a>
+                    <a href="#" class="list-group-item list-group-item-warning">Porta ac consectetur ac</a>
+                    <a href="#" class="list-group-item list-group-item-danger">Vestibulum at eros</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <pre class="clear-pre">
+        <code class="html">
+            &lt;div class="container-fluid"&gt;
+                &lt;div class="row"&gt;
+                    &lt;div class="col-md-6 col-sm-6"&gt;
+                        &lt;ul class="list-group"&gt;
+                            &lt;li class="list-group-item list-group-item-success"&gt;Dapibus ac facilisis in&lt;/li&gt;
+                            &lt;li class="list-group-item list-group-item-info"&gt;Cras sit amet nibh libero&lt;/li&gt;
+                            &lt;li class="list-group-item list-group-item-warning"&gt;Porta ac consectetur ac&lt;/li&gt;
+                            &lt;li class="list-group-item list-group-item-danger"&gt;Vestibulum at eros&lt;/li&gt;
+                        &lt;/ul&gt;
+                    &lt;/div&gt;
+                    &lt;div class="col-md-6 col-sm-6"&gt;
+                        &lt;div class="list-group"&gt;
+                            &lt;a href="#" class="list-group-item list-group-item-success"&gt;Dapibus ac facilisis in&lt;/a&gt;
+                            &lt;a href="#" class="list-group-item list-group-item-info"&gt;Cras sit amet nibh libero&lt;/a&gt;
+                            &lt;a href="#" class="list-group-item list-group-item-warning"&gt;Porta ac consectetur ac&lt;/a&gt;
+                            &lt;a href="#" class="list-group-item list-group-item-danger"&gt;Vestibulum at eros&lt;/a&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        </code>
+    </pre>
+</div>
+<div class="f-m-b-sm">
+    <p class="f-title">定制内容</p>
+    <p>列表组中的每个元素都可以是任何 <span class="red">HTML</span> 内容，甚至是像下面的带链接的列表组。</p>
+    <div class="list-group">
+        <a href="#" class="list-group-item active">
+            <h4 class="list-group-item-heading">List group item heading</h4>
+            <p class="list-group-item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aspernatur consequuntur molestiae porro rerum saepe! Adipisci architecto blanditiis cumque eos eveniet, ipsa molestias repellendus sapiente sunt. Minus ratione vel voluptatibus.</p>
+        </a>
+        <a href="#" class="list-group-item">
+            <h4 class="list-group-item-heading">List group item heading</h4>
+            <p class="list-group-item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aspernatur consequuntur molestiae porro rerum saepe! Adipisci architecto blanditiis cumque eos eveniet, ipsa molestias repellendus sapiente sunt. Minus ratione vel voluptatibus.</p>
+        </a>
+        <a href="#" class="list-group-item">
+            <h4 class="list-group-item-heading">List group item heading</h4>
+            <p class="list-group-item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aspernatur consequuntur molestiae porro rerum saepe! Adipisci architecto blanditiis cumque eos eveniet, ipsa molestias repellendus sapiente sunt. Minus ratione vel voluptatibus.</p>
+        </a>
+    </div>
+    <pre class="clear-pre">
+        <code class="html">
+            &lt;div class="list-group"&gt;
+                &lt;a href="#" class="list-group-item active"&gt;
+                    &lt;h4 class="list-group-item-heading"&gt;List group item heading&lt;/h4&gt;
+                    &lt;p class="list-group-item-text"&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aspernatur consequuntur molestiae porro rerum saepe! Adipisci architecto blanditiis cumque eos eveniet, ipsa molestias repellendus sapiente sunt. Minus ratione vel voluptatibus.&lt;/p&gt;
+                &lt;/a&gt;
+                &lt;a href="#" class="list-group-item"&gt;
+                    &lt;h4 class="list-group-item-heading"&gt;List group item heading&lt;/h4&gt;
+                    &lt;p class="list-group-item-text"&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aspernatur consequuntur molestiae porro rerum saepe! Adipisci architecto blanditiis cumque eos eveniet, ipsa molestias repellendus sapiente sunt. Minus ratione vel voluptatibus.&lt;/p&gt;
+                &lt;/a&gt;
+                &lt;a href="#" class="list-group-item"&gt;
+                    &lt;h4 class="list-group-item-heading"&gt;List group item heading&lt;/h4&gt;
+                    &lt;p class="list-group-item-text"&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aspernatur consequuntur molestiae porro rerum saepe! Adipisci architecto blanditiis cumque eos eveniet, ipsa molestias repellendus sapiente sunt. Minus ratione vel voluptatibus.&lt;/p&gt;
+                &lt;/a&gt;
+            &lt;/div&gt;
+        </code>
+    </pre>
+</div>
+<script src="../../js/jquery-1.11.3.min.js"></script>
+<script src="../../js/plugins/bootstrap.min.js"></script>
+</body>
+</html>

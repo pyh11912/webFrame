@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+html {
+    font: 62.5% “Lucida Grande”, Lucida, Verdana, sans-serif;
+    text-shadow: #000 0px 0px 0px;
+}
+ul {
+    list-style: none;
+    list-style-type: none;
+}
+h1, h2, h3, h4, h5, h6, p, pre,
+blockquote, ul, ol, dl, address {
+    font-weight: normal;
+    margin: 0 0 1em 0;
+}
+cite, em, dfn {
+    font-style: italic;
+}
+sup {
+    position: relative;
+    bottom: 0.3em;
+    vertical-align: baseline;
+}
+sub {
+    position: relative;
+    bottom: -0.2em;
+    vertical-align: baseline;
+}
+li, dd, blockquote {
+    margin-left: 1em;
+}
+code, kbd, samp, pre, tt, var, input[type='text'], textarea {
+    font-size: 100%;
+    font-family: monaco, “Lucida Console”, courier, mono-space;
+}
+del {
+    text-decoration: line-through;
+}
+ins, dfn {
+    border-bottom: 1px solid #ccc;
+}
+small, sup, sub {
+    font-size: 85%;
+}
+abbr, acronym {
+    text-transform: uppercase;
+    font-size: 85%;
+    letter-spacing: .1em;
+    border-bottom-style: dotted;
+    border-bottom-width: 1px;
+}
+a abbr, a acronym {
+    border: none;
+}
+sup {
+    vertical-align: super;
+}
+sub {
+    vertical-align: sub;
+}
+h1 {
+    font-size: 2em;
+}
+h2 {
+    font-size: 1.8em;
+}
+h3 {
+    font-size: 1.6em;
+}
+h4 {
+    font-size: 1.4em;
+}
+h5 {
+    font-size: 1.2em;
+}
+h6 {
+    font-size: 1em;
+}
+a, a:link, a:visited, a:hover, a:active {
+    outline: 0;
+    text-decoration: none;
+}
+a img {
+    border: none;
+    text-decoration: none;
+}
+img {
+    border: none;
+    text-decoration: none;
+}
+label, button {
+    cursor: pointer;
+}
+input:focus, select:focus, textarea:focus {
+    background-color: #FFF;
+}
+fieldset {
+    border: none;
+}
+.clear {
+    clear: both;
+}
+.float-left {
+    float: left;
+}
+.float-right {
+    float: right;
+}
+#wrapper {
+    margin: 0 auto;
+    text-align: left;
+}
+
+/*
+ 通用样式
+*/
+/*.f-clear{*/
+    /*display:block;*/
+    /*clear:both;*/
+    /*height:0;*/
+    /*overflow:hidden;*/
+    /*content:" ";*/
+/*}*/
+
+.f-p{padding:25px;}
+.f-p-xs{padding:5px;}
+.f-p-sm{padding:10px;}
+.f-p-md{padding:15px;}
+.f-p-lg{padding:20px;}
+
+.f-m{margin:25px;}
+.f-m-xs{margin:5px;}
+.f-m-t-xs{margin-top:5px;}
+.f-m-r-xs{margin-right:5px;}
+.f-m-b-xs{margin-bottom:5px;}
+.f-m-l-xs{margin-left:5px;}
+.f-m-sm{margin:10px;}
+.f-m-t-sm{margin-top:10px;}
+.f-m-r-sm{margin-right:10px;}
+.f-m-b-sm{margin-bottom:10px;}
+.f-m-l-sm{margin-left:10px;}
+.f-m-md{margin:15px;}
+.f-m-t-md{margin-top:15px;}
+.f-m-r-md{margin-right:15px;}
+.f-m-b-md{margin-bottom:15px;}
+.f-m-l-md{margin-left:15px;}
+.f-m-lg{margin:20px;}
+.f-m-t-lg{margin-top:20px;}
+.f-m-r-lg{margin-right:20px;}
+.f-m-b-lg{margin-bottom:20px;}
+.f-m-l-lg{margin-left:20px;}
+
+.text-align{
+    text-align:center;
+}
+.clear-pre{
+    border:none;
+    background-color:#fff;
+    padding:0;
+    border-radius:0;
+    line-height: normal;
+    word-break: normal;
+    word-wrap: normal;
+}
+.f-title{
+    font-weight:bold;
+}
+.red{
+    color:red;
+}
+.icon{
+    margin-right:3px;
+}

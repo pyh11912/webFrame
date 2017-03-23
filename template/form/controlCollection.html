@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>内联表单</title>
+    <link rel="stylesheet" href="../../css/reset.css"/>
+    <link rel="stylesheet" href="../../css/bootstrap/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../../css/highlight/paraiso-light.css"/>
+    <script src="../../js/plugins/highlinght/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    <!--[if lt IE 9]>
+    <script src="../../js/plugins/html5shiv.js"></script>
+    <script src="../../js/plugins/respond.js"></script>
+    <![endif]-->
+</head>
+<body class="f-p-sm">
+<div class="f-m-b-sm">
+    <p class="f-title">输入框</p>
+    <input type="text" class="form-control" placeholder="Text input">
+<pre class="clear-pre">
+    <code class="html">
+        &lt;input type="text" class="form-control" placeholder="Text input"&gt;
+    </code>
+</pre>
+</div>
+<div class="f-m-b-sm">
+    <p class="f-title">文本域</p>
+    <textarea class="form-control" rows="3"></textarea>
+    <pre class="clear-pre">
+        <code class="html">
+            &lt;textarea class="form-control" rows="3"&gt;&lt;/textarea&gt;
+        </code>
+    </pre>
+</div>
+<div class="f-m-b-sm">
+    <p class="f-title">多选和单选框</p>
+    <div class="checkbox">
+        <label>
+            <input type="checkbox" value="">
+            Option one is this and that&mdash;be sure to include why it's great
+        </label>
+    </div>
+    <div class="checkbox disabled">
+        <label>
+            <input type="checkbox" value="" disabled>
+            Option two is disabled
+        </label>
+    </div>
+
+    <div class="radio">
+        <label>
+            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+            Option one is this and that&mdash;be sure to include why it's great
+        </label>
+    </div>
+    <div class="radio">
+        <label>
+            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+            Option two can be something else and selecting it will deselect option one
+        </label>
+    </div>
+    <div class="radio disabled">
+        <label>
+            <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
+            Option three is disabled
+        </label>
+    </div>
+    <pre class="clear-pre">
+        <code class="html">
+            &lt;div class="checkbox"&gt;
+                &lt;label&gt;
+                    &lt;input type="checkbox" value=""&gt;
+                    Option one is this and that&mdash;be sure to include why it's great
+                &lt;/label&gt;
+            &lt;/div&gt;
+            &lt;div class="checkbox disabled"&gt;
+                &lt;label&gt;
+                    &lt;input type="checkbox" value="" disabled&gt;
+                    Option two is disabled
+                &lt;/label&gt;
+            &lt;/div&gt;
+
+            &lt;div class="radio"&gt;
+                &lt;label&gt;
+                    &lt;input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked&gt;
+                    Option one is this and that&mdash;be sure to include why it's great
+                &lt;/label&gt;
+            &lt;/div&gt;
+            &lt;div class="radio"&gt;
+                &lt;label&gt;
+                    &lt;input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"&gt;
+                    Option two can be something else and selecting it will deselect option one
+                &lt;/label&gt;
+            &lt;/div&gt;
+            &lt;div class="radio disabled"&gt;
+                &lt;label&gt;
+                    &lt;input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled&gt;
+                    Option three is disabled
+                &lt;/label&gt;
+            &lt;/div&gt;
+        </code>
+    </pre>
+</div>
+<div class="f-m-b-sm">
+    <p class="f-title">内联单选和多选框</p>
+    <label class="checkbox-inline">
+        <input type="checkbox" id="inlineCheckbox1" value="option1"> 1
+    </label>
+    <label class="checkbox-inline">
+        <input type="checkbox" id="inlineCheckbox2" value="option2"> 2
+    </label>
+    <label class="checkbox-inline">
+        <input type="checkbox" id="inlineCheckbox3" value="option3"> 3
+    </label>
+
+    <label class="radio-inline">
+        <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 1
+    </label>
+    <label class="radio-inline">
+        <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 2
+    </label>
+    <label class="radio-inline">
+        <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> 3
+    </label>
+    <pre class="clear-pre">
+        <code class="html">
+            &lt;label class="checkbox-inline"&gt;
+                &lt;input type="checkbox" id="inlineCheckbox1" value="option1"&gt; 1
+            &lt;/label&gt;
+            &lt;label class="checkbox-inline"&gt;
+                &lt;input type="checkbox" id="inlineCheckbox2" value="option2"&gt; 2
+            &lt;/label&gt;
+            &lt;label class="checkbox-inline"&gt;
+                &lt;input type="checkbox" id="inlineCheckbox3" value="option3"&gt; 3
+            &lt;/label&gt;
+
+            &lt;label class="radio-inline"&gt;
+                &lt;input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"&gt; 1
+            &lt;/label&gt;
+            &lt;label class="radio-inline"&gt;
+                &lt;input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"&gt; 2
+            &lt;/label&gt;
+            &lt;label class="radio-inline"&gt;
+                &lt;input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"&gt; 3
+            &lt;/label&gt;
+        </code>
+    </pre>
+</div>
+<div class="f-m-b-sm">
+    <p class="f-title">下拉列表</p>
+    <select class="form-control">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+    </select>
+    <pre class="clear-pre">
+        <code class="html">
+            &lt;select class="form-control"&gt;
+                &lt;option&gt;1&lt;/option&gt;
+                &lt;option&gt;2&lt;/option&gt;
+                &lt;option&gt;3&lt;/option&gt;
+                &lt;option&gt;4&lt;/option&gt;
+                &lt;option&gt;5&lt;/option&gt;
+            &lt;/select&gt;
+        </code>
+    </pre>
+</div>
+<script src="../../js/jquery-1.11.3.min.js"></script>
+<script src="../../js/plugins/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>三列左侧自适应布局</title>
+    <link rel="stylesheet" href="../../css/reset.css"/>
+    <link rel="stylesheet" href="../../css/bootstrap/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../../css/highlight/paraiso-light.css"/>
+    <script src="../../js/plugins/highlinght/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    <!--[if lt IE 9]>
+    <script src="../../js/plugins/html5shiv.js"></script>
+    <script src="../../js/plugins/respond.js"></script>
+    <![endif]-->
+
+    <style type="text/css">
+        .wrapper{width:500px;margin:0 auto;border:1px solid #000;color:#fff;}
+        .wrapper:after{display:block;clear:both;overflow:hidden;content:" ";height:0;}
+        .wrapper-left{width:100%;float:left;margin-right:-200px;}
+        .wrapper-inner{margin-right:200px;height:100px;background-color:green;}
+        .wrapper-middle{width:100px;height:100px;float:left;background-color:red}
+        .wrapper-right{width:100px;height:100px;float:left;background-color: blue}
+    </style>
+</head>
+<body class="f-p-sm">
+<a href="layout_base.html" class="btn btn-default">返回上级</a>
+<h3>三列左侧自适应布局</h3>
+<div class="wrapper">
+    <div class="wrapper-left">
+        <div class="wrapper-inner">我是左侧</div>
+    </div>
+    <div class="wrapper-middle">
+        我是中部
+    </div>
+    <div class="wrapper-right">
+        我是右侧
+    </div>
+</div>
+<pre class="clear-pre">
+    <code class="html">
+        &lt;!--css引入文件--&gt;
+        &lt;style type="text/css"&gt;
+            .wrapper{width:500px;margin:0 auto;border:1px solid #000;color:#fff;}
+            .wrapper:after{display:block;clear:both;overflow:hidden;content:" ";height:0;}
+            .wrapper-left{width:100%;float:left;margin-right:-200px;}
+            .wrapper-inner{margin-right:200px;height:100px;background-color:green;}
+            .wrapper-middle{width:100px;height:100px;float:left;background-color:red}
+            .wrapper-right{width:100px;height:100px;float:left;background-color: blue}
+        &lt;/style&gt;
+        
+        
+        &lt;!--html代码--&gt;
+        &lt;div class="wrapper"&gt;
+            &lt;div class="wrapper-left"&gt;
+                &lt;div class="wrapper-inner"&gt;我是左侧&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="wrapper-middle"&gt;
+                我是中部
+            &lt;/div&gt;
+            &lt;div class="wrapper-right"&gt;
+                我是右侧
+            &lt;/div&gt;
+        &lt;/div&gt;
+    </code>
+</pre>
+<script src="../../js/jquery-1.11.3.min.js"></script>
+<script src="../../js/plugins/bootstrap.min.js"></script>
+</body>
+</html>

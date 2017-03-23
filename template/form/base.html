@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>基础实例</title>
+    <link rel="stylesheet" href="../../css/reset.css"/>
+    <link rel="stylesheet" href="../../css/bootstrap/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../../css/highlight/paraiso-light.css"/>
+    <script src="../../js/plugins/highlinght/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    <!--[if lt IE 9]>
+    <script src="../../js/plugins/html5shiv.js"></script>
+    <script src="../../js/plugins/respond.js"></script>
+    <![endif]-->
+</head>
+<body class="f-p-sm">
+<form>
+    <div class="form-group">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputPassword1">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputFile">File input</label>
+        <input type="file" id="exampleInputFile">
+        <p class="help-block">Example block-level help text here.</p>
+    </div>
+    <div class="checkbox">
+        <label>
+            <input type="checkbox"> Check me out
+        </label>
+    </div>
+    <button type="submit" class="btn btn-default">Submit</button>
+</form>
+<pre class="clear-pre">
+    <code class="html">
+        单独的表单控件会被自动赋予一些全局样式。所有设置了 .form-control 类的 &lt;input&gt;、&lt;textarea&gt; 和 &lt;select&gt; 元素都将被默认设置宽度属性为 width: 100%;。 将 label 元素和前面提到的控件包裹在 .form-group 中可以获得最好的排列。
+        &lt;form&gt;
+            &lt;div class="form-group"&gt;
+                &lt;label for="exampleInputEmail1"&gt;Email address&lt;/label&gt;
+                &lt;input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email"&gt;
+            &lt;/div&gt;
+            &lt;div class="form-group"&gt;
+                &lt;label for="exampleInputPassword1"&gt;Password&lt;/label&gt;
+                &lt;input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password"&gt;
+            &lt;/div&gt;
+            &lt;div class="form-group"&gt;
+                &lt;label for="exampleInputFile"&gt;File input&lt;/label&gt;
+                &lt;input type="file" id="exampleInputFile"&gt;
+                &lt;p class="help-block"&gt;Example block-level help text here.&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class="checkbox"&gt;
+                &lt;label&gt;
+                    &lt;input type="checkbox"&gt; Check me out
+                &lt;/label&gt;
+            &lt;/div&gt;
+            &lt;button type="submit" class="btn btn-default"&gt;Submit&lt;/button&gt;
+        &lt;/form&gt;
+    </code>
+</pre>
+<script src="../../js/jquery-1.11.3.min.js"></script>
+<script src="../../js/plugins/bootstrap.min.js"></script>
+</body>
+</html>

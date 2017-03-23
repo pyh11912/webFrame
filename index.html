@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>布局</title>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/layout.css"/>
+    <link rel="stylesheet" href="css/ztree/zTreeStyle.css"/>
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/plugins/jquery.ztree.all.min.js"></script>
+    <script type="text/javascript">
+        var setting = {
+            data: {
+                simpleData: {
+                    enable: true
+                }
+            }
+        };
+        var zNodes =[
+            {id:1,pId:0,name:"元件unit"},
+            {id:101,pId:1,name:"下拉菜单",url:"template/unit/select.html",target:"myIframe"},
+            {id:102,pId:1,name:"按钮式下拉菜单",url:"template/unit/btnSelect.html",target:"myIframe"},
+            {id:103,pId:1,name:"按钮",url:"template/unit/btn.html",target:"myIframe"},
+            {id:105,pId:1,name:"按钮组",url:"template/unit/btnGroup.html",target:"myIframe"},
+            {id:104,pId:1,name:"表单"},
+            {id:1041,pId:104,name:"基本实例",url:"template/form/base.html",target:"myIframe"},
+            {id:1042,pId:104,name:"内联表单",url:"template/form/inline.html",target:"myIframe"},
+            {id:1043,pId:104,name:"水平排列的表单",url:"template/form/horizontal.html",target:"myIframe"},
+            {id:1044,pId:104,name:"被支持的控件",url:"template/form/controlCollection.html",target:"myIframe"},
+            {id:1045,pId:104,name:"校验状态",url:"template/form/validateStatus.html",target:"myIframe"},
+            {id:6,pId:0,name:"JavaScript插件"},
+            {id:601,pId:6,name:"轮播carousel",url:"template/jspluins/carousel.html",target:"myIframe"},
+            {id:602,pId:6,name:"工具提示",url:"template/jspluins/tooltip.html",target:"myIframe"},
+            {id:603,pId:6,name:"弹出框",url:"template/jspluins/popover.html",target:"myIframe"},
+            {id:604,pId:6,name:"日期控件",url:"template/jspluins/calendar.html",target:"myIframe"},
+            {id:604,pId:6,name:"标签页",url:"template/jspluins/tabs.html",target:"myIframe"},
+            {id:604,pId:6,name:"swiper",url:"template/jspluins/swiper/swiper.html",target:"myIframe"},
+            {id:7,pId:0,name:"组件module"},
+            {id:701,pId:7,name:"分页",url:"template/module/pagination.html",target:"myIframe"},
+            {id:702,pId:7,name:"缩略图",url:"template/module/thumbnail.html",target:"myIframe"},
+            {id:703,pId:7,name:"警告框",url:"template/module/alert.html",target:"myIframe"},
+            {id:704,pId:7,name:"进度条",url:"template/module/progress.html",target:"myIframe"},
+            {id:705,pId:7,name:"列表组",url:"template/module/listGroup.html",target:"myIframe"},
+            {id:706,pId:7,name:"面板",url:"template/module/panel.html",target:"myIframe"},
+            {id:707,pId:7,name:"面包屑",url:"template/module/breadcrumb.html",target:"myIframe"},
+            {id:708,pId:7,name:"导航",url:"template/module/nav.html",target:"myIframe"},
+            {id:709,pId:7,name:"导航条",url:"template/module/navbar.html",target:"myIframe"},
+            {id:710,pId:7,name:"表格",url:"template/module/table.html",target:"myIframe"},
+            {id:2,pId:0,name:"echart图表"},
+            {id:201,pId:2,name:"散点图",url:"template/echart.html",target:"myIframe"},
+            {id:3,pId:0,name:"字体图标"},
+            {id:301,pId:3,name:"阿里图标库",url:"css/alitubiao/demo.html",target:"myIframe"},
+            {id:8,pId:0,name:"基础布局",url:"template/layout/layout_base.html",target:"myIframe"},
+            {id:9,pId:0,name:"css相关知识"},
+            {id:901,pId:9,name:"css重置样式",url:"template/cssfunction/reset.html",target:"myIframe"},
+            {id:902,pId:9,name:"css媒体查询",url:"template/cssfunction/media.html",target:"myIframe"},
+            {id:903,pId:9,name:"css动画库"},
+            {id:9031,pId:903,name:"css动画原理",url:"template/cssfunction/animate/animate_principle.html",target:"myIframe"},
+            {id:9032,pId:903,name:"css动画实例",url:"template/cssfunction/animate/animate_example.html",target:"myIframe"}
+        ];
+        $(document).ready(function(){
+            $.fn.zTree.init($("#tree"), setting, zNodes);
+            var treeObj = $.fn.zTree.getZTreeObj("tree");
+            treeObj.expandAll(true);
+        });
+    </script>
+</head>
+<body>
+      <div class="layout">
+          <div class="layout-header">
+              <h1>UI框架</h1>
+          </div>
+          <div class="layout-left">
+               <div class="ztree" id="tree"></div>
+          </div>
+          <div class="layout-center">
+              <iframe src="template/module/thumbnail.html" frameborder="0" width="100%" height="100%" name="myIframe"></iframe>
+          </div>
+          <div class="layout-footer">
+              <span>版权所有 @2016 潘宇辉</span>
+          </div>
+      </div>
+      <script src="js/layout.js"></script>
+</body>
+</html>

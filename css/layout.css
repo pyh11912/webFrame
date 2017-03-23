@@ -1,0 +1,60 @@
+.layout{
+    position:relative;
+    width:100%;
+}
+.layout-header{
+    background: -webkit-linear-gradient(#000, #e0e2e4); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(#000, #e0e2e4); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(#000, #e0e2e4); /* Firefox 3.6 - 15 */
+    background: linear-gradient(#000, #e0e2e4); /* 标准的语法 */
+    height:50px;
+    text-align:left;
+    text-indent:30px;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+}
+.layout-header h1{
+    line-height:50px;
+    color:#fff;
+    font-weight:bold;
+}
+.layout-left{
+    /*background-color:#e8e8e8;*/
+    background: -webkit-linear-gradient(#bbdaff, #e0e2e4); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(#bbdaff, #e0e2e4); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(#bbdaff, #e0e2e4); /* Firefox 3.6 - 15 */
+    background: linear-gradient(#bbdaff, #e0e2e4); /* 标准的语法 */
+    position:absolute;
+    left:0;
+    width:200px;
+    overflow:auto;
+    border-right:1px solid #bbdaff;
+}
+.layout-center{
+    background-color:#fff;
+    position:absolute;
+    right:0;
+}
+.layout-center iframe{
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+}
+.layout-footer{
+    background: -webkit-linear-gradient( #e0e2e4,#000); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient( #e0e2e4,#000); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient( #e0e2e4,#000); /* Firefox 3.6 - 15 */
+    background: linear-gradient( #e0e2e4,#000); /* 标准的语法 */
+    position:fixed;
+    bottom:0;
+    left:0;
+    width:100%;
+    height:50px;
+    color: #fff;
+    line-height:50px;
+    text-align:center;
+}

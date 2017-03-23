@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>日期控件</title>
+    <link rel="stylesheet" href="../../css/reset.css"/>
+    <!--<link rel="stylesheet" href="../../css/bootstrap/bootstrap.min.css"/>-->
+    <link rel="stylesheet" href="../../css/highlight/paraiso-light.css"/>
+    <script src="../../js/plugins/highlinght/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    <!--[if lt IE 9]>
+    <script src="../../js/plugins/html5shiv.js"></script>
+    <script src="../../js/plugins/respond.js"></script>
+    <![endif]-->
+</head>
+<body class="f-p-sm">
+<p class="f-title">日期控件</p>
+<input class="Wdate" type="text" onClick="WdatePicker()">
+<pre class="clear-pre">
+    <code class="html">
+        &lt;input class="Wdate" type="text" onClick="WdatePicker()"&gt;
+
+        
+        &lt;!--需要引入datePicker.js文件，其他文件不需要引入--&gt;
+        &lt;script language="javascript" type="text/javascript" src="../../js/plugins/datepicker/datePicker.js"&gt;&lt;/script&gt;
+    </code>
+</pre>
+<p class="f-title">时间段</p>
+<div>
+    <input class="Wdate" type="text" onClick="WdatePicker()">
+    <span>至</span>
+    <input class="Wdate" type="text" onClick="WdatePicker()">
+</div>
+<pre class="clear-pre">
+     <code class="html">
+         &lt;input class="Wdate" type="text" onClick="WdatePicker()"&gt;
+         &lt;span&gt;至&lt;/span&gt;
+         &lt;input class="Wdate" type="text" onClick="WdatePicker()"&gt;
+     </code>
+</pre>
+<script src="../../js/jquery-1.11.3.min.js"></script>
+<script src="../../js/plugins/bootstrap.min.js"></script>
+<script language="javascript" type="text/javascript" src="../../js/plugins/datepicker/datePicker.js"></script>
+</body>
+</html>

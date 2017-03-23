@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>路径导航</title>
+    <link rel="stylesheet" href="../../css/reset.css"/>
+    <link rel="stylesheet" href="../../css/bootstrap/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../../css/highlight/paraiso-light.css"/>
+    <script src="../../js/plugins/highlinght/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    <!--[if lt IE 9]>
+    <script src="../../js/plugins/html5shiv.js"></script>
+    <script src="../../js/plugins/respond.js"></script>
+    <![endif]-->
+</head>
+<body class="f-p-sm">
+<p class="f-title">路径导航</p>
+<p>在一个带有层次的导航结构中标明当前页面的位置。<br/>
+    各路径间的分隔符已经自动通过 <span class="red">CSS</span> 的 <span class="red">:before</span> 和 <span class="red">content</span> 属性添加了。</p>
+<ol class="breadcrumb">
+    <li class="active">Home</li>
+</ol>
+<ol class="breadcrumb">
+    <li><a href="#">Home</a></li>
+    <li class="active">Library</li>
+</ol>
+<ol class="breadcrumb">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Library</a></li>
+    <li class="active">Data</li>
+</ol>
+<pre class="clear-pre">
+    <code class="html">
+        &lt;ol class="breadcrumb"&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Library&lt;/a&gt;&lt;/li&gt;
+            &lt;li class="active"&gt;Data&lt;/li&gt;
+        &lt;/ol&gt;
+    </code>
+</pre>
+<script src="../../js/jquery-1.11.3.min.js"></script>
+<script src="../../js/plugins/bootstrap.min.js"></script>
+</body>
+</html>

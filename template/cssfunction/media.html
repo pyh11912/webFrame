@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>css媒体查询</title>
+    <link rel="stylesheet" href="../../css/reset.css"/>
+    <link rel="stylesheet" href="../../css/bootstrap/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../../css/highlight/paraiso-light.css"/>
+    <script src="../../js/plugins/highlinght/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    <!--[if lt IE 9]>
+    <script src="../../js/plugins/html5shiv.js"></script>
+    <script src="../../js/plugins/respond.js"></script>
+    <![endif]-->
+</head>
+<body class="f-p-sm">
+<p class="f-title">CSS媒体查询</p>
+<pre class="clear-pre">
+    <code class="html">
+        /* media */
+        /* 横屏 */
+        @media screen and (orientation:landscape){
+        }
+        /* 竖屏 */
+        @media screen and (orientation:portrait){
+        }
+        /* 窗口宽度<960,设计宽度=768 */
+        @media screen and (max-width:959px){
+        }
+        /* 窗口宽度<768,设计宽度=640 */
+        @media screen and (max-width:767px){
+        }
+        /* 窗口宽度<640,设计宽度=480 */
+        @media screen and (max-width:639px){
+        }
+        /* 窗口宽度<480,设计宽度=320 */
+        @media screen and (max-width:479px){
+        }
+        /* windows UI 贴靠 */
+        @media screen and (-ms-view-state:snapped){
+        }
+        /* 打印 */
+        @media print{
+        }
+    </code>
+</pre>
+<script src="../../js/jquery-1.11.3.min.js"></script>
+<script src="../../js/plugins/bootstrap.min.js"></script>
+</body>
+</html>

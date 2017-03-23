@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CSS3动画规则</title>
+    <link rel="stylesheet" href="../../../css/reset.css"/>
+    <link rel="stylesheet" href="../../../css/bootstrap/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../../../css/highlight/paraiso-light.css"/>
+    <script src="../../../js/plugins/highlinght/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    <!--[if lt IE 9]>
+    <script src="../../../js/plugins/html5shiv.js"></script>
+    <script src="../../../js/plugins/respond.js"></script>
+    <![endif]-->
+</head>
+<body class="f-p-sm">
+<div class="f-m-b-sm">
+    <p class="f-title">CSS动画·<span class="red">过渡动画</span></p>
+    <p> 过渡（<span class="red">transition</span>）动画，就是从初始状态过渡到结束状态这个过程中所产生的动画。所谓的状态就是指大小、位置、颜色、变形（<span class="red">transform</span>）等等这些属性。<span class="red">css</span>过渡只能定义首和尾两个状态，所以是最简单的一种动画。
+        要想使一个元素产生过渡动画，首先要在这个元素上用<span class="red">transition</span>属性定义动画的各种参数。可定义的参数有<br/>
+        <span class="red">transition-property：</span>规定对哪个属性进行过渡<br/>
+        <span class="red">transition-duration：</span>定义过渡的时间，默认是<span class="red">0</span><br/>
+        <span class="red">transition-timing-function：</span>定义过渡动画的缓动效果，如淡入、淡出等，默认是 <span class="red">ease</span><br/>
+        <span class="red">transition-delay：</span>规定过渡效果的延迟时间，即在过了这个时间后才开始动画，默认是<span class="red">0</span></p>
+        <pre class="clear-pre">
+            <code class="html">
+                &lt;style&gt;
+                    div{
+                        transition-property:width; /*对宽度进行过度*/
+                        transition-duration:3s;/*过渡时间为3秒*/
+                        transition-timing-function:ease;/*缓动效果为ease*/
+                        transition-delay:3s;/*延迟3秒后才开始过度*/
+                    }
+                &lt;/style&gt;
+            </code>
+        </pre>
+       <p>为了书写方便，也可以把这四个属性按照以上顺序简写在一个 <span class="red">transition</span> 属性上：</p>
+       <pre class="clear-pre">
+           <code class="html">
+               &lt;style&gt;
+                    div{ transition: width 3s ease 3s;}
+               &lt;/style&gt;
+           </code>
+       </pre>
+       <p>如果想要同时过渡多个属性，可以用逗号隔开，如：</p>
+       <pre class="clear-pre">
+           <code class="html">
+               &lt;style&gt;
+                     div{ transition: width 3s ease 3s,height 3s ease 3s,background-color 3s ease 3s;}
+               &lt;/style&gt;
+           </code>
+       </pre>
+</div>
+<p class="f-title">CSS动画·<span class="red">关键帧动画</span></p>
+<p><span class="red">CSS @keyframes</span> 规则</p>
+<p><span class="red">Internet Explorer 10</span>、<span class="red">Firefox</span> 以及 <span class="red">Opera</span> 支持 <span class="red">@keyframes</span> 规则和 <span class="red">animation</span> 属性。<br/>
+    <span class="red">Chrome</span> 和 <span class="red">Safari</span> 需要前缀 <span class="red">-webkit-</span>。<br/>
+    注释：<span class="red">Internet Explorer 9</span>，以及更早的版本，不支持 <span class="red">@keyframe</span> 规则或 <span class="red">animation</span> 属性。</p>
+    <pre class="clear-pre">
+        <code class="html">
+            &lt;style&gt;
+                @keyframes myfirst{
+                    from {background: red;}
+                    to {background: yellow;}
+                }
+
+                @-moz-keyframes myfirst{/* Firefox */
+                    from {background: red;}
+                    to {background: yellow;}
+                }
+
+                @-webkit-keyframes myfirst{/* Safari 和 Chrome */
+                    from {background: red;}
+                    to {background: yellow;}
+                }
+
+                @-o-keyframes myfirs{/* Opera */
+                    from {background: red;}
+                    to {background: yellow;}
+                }
+            &lt;/style&gt;
+            &lt;!--from代表从动画帧的开始,to代表到动画帧的结束。其中帧可以由0%，25%，50%,75%,100%等百分数完成一系列动画效果--&gt;
+        </code>
+    </pre>
+   <p>当您在 <span class="red">@keyframes</span> 中创建动画时，请把它捆绑到某个选择器，否则不会产生动画效果。</p>
+   <p class="f-title">实例</p>
+   <p>把 "<span class="red">myfirst</span>" 动画捆绑到 <span class="red">div</span> 元素，时长：<span class="red">5</span> 秒：</p>
+   <pre class="clear-pre">
+       <code class="html">
+           &lt;style&gt;
+               div{
+                   animation: myfirst 5s;
+                   -moz-animation: myfirst 5s;	/* Firefox */
+                   -webkit-animation: myfirst 5s;	/* Safari 和 Chrome */
+                   -o-animation: myfirst 5s;	/* Opera */
+               }
+           &lt;/style&gt;
+       </code>
+   </pre>
+<script src="../../../js/jquery-1.11.3.min.js"></script>
+<script src="../../../js/plugins/bootstrap.min.js"></script>
+</body>
+</html>
